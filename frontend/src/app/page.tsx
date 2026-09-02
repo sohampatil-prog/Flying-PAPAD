@@ -8,7 +8,7 @@
 
 import GameCanvas from "../components/game/GameCanvas";
 import Leaderboard from "../components/game/Leaderboard";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 export default function HomePage() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center py-10 px-4 gap-8">

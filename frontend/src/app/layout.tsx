@@ -8,6 +8,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "../components/Providers";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "पापड़ उड़ — Papad Udd Game",
@@ -24,6 +25,8 @@ export default function RootLayout({
       <body className="bg-amber-950 min-h-screen">
         {/* Providers wraps everything in the Redux store */}
         <Providers>{children}</Providers>
+        {/* Vercel Speed Insights — collects Core Web Vitals from real visitors */}
+        <SpeedInsights />
       </body>
     </html>
   );
